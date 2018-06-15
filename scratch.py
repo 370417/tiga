@@ -257,8 +257,16 @@ def run_magma(family):
             'braid': [[vector_id]],
             'topological': [[vector_id]]})
         return
+    family.sort('total_label', pymongo.DESCENDING)
+    big_passports = Set()
     code = helper_code + top_matter.format(**family[0])
     for vector in family:
+        compute_braid = False
+        if vector['passport_label'] in big_passports:
+            compute_braid = True
+        elif vector['total_label'][-1] != '1':
+            big_passports.add(vector['passport_label'])
+            compute_braid = True
         code += action_code.format(**vector)
     code += orbits_code
     update_database(yaml.load(magma.eval(code)))
@@ -266,6 +274,8 @@ def run_magma(family):
 for label in cap.find({'genus': 2}).distinct('label'):
     family = cap.find({'label': label}, {
         'label': 1,
+        'passport_label': 1,
+        'total_label': 1,
         'gen_vectors': 1,
         'group': 1,
         'signature': 1,
