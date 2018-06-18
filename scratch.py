@@ -116,10 +116,11 @@ end function;
 '''
 
 top_matter = '''
-// Magma code for the lmfdb family of higher genus curves 3.24-12.0.2-2-2-3
 // The results are stored in a list of records called 'data'
+// The results for braid equivalence are stored in a list of records called 'braid_data'
 RecFormat:=recformat<group, gp_id, signature, gen_vectors, genus, dimension, r, g0, vector_id>;
 data:=[];
+braid_data:=[];
 // Create group as a permutation group, and generate data which is the same for all entries.
 gp_id:={group};
 H:=SmallGroup(gp_id[1],gp_id[2]);
@@ -162,11 +163,24 @@ Append(~data, rec<RecFormat | group:=G,
                               vector_id:="{_id}">);
 '''
 
+braid_action_code = '''
+Append(~braid_data, rec<RecFormat | group:=G,
+                                    gp_id:=gp_id,
+                                    signature:=signature,
+                                    gen_vectors:=gen_vectors_as_perm,
+                                    genus:=genus,
+                                    dimension:=dim,
+                                    r:=r,
+                                    g0:=g0,
+                                    vector_id:="{_id}">);
+'''
+
 orbits_code = '''
 prtfile:="orbits_magma2.yml";
 /* This next command keeps Magma from printing line breaks */
 SetColumns(0);
 genvecs:=[[* data[i]`gen_vectors,data[i]`vector_id *] : i in [1..#data]];
+braid_genvecs:=[[* braid_data[i]`gen_vectors,braid_data[i]`vector_id *] : i in [1..#braid_data]];
 /* MAIN CODE */
 if #genvecs gt 0 then
    if #genvecs eq 1 then
@@ -179,7 +193,8 @@ if #genvecs gt 0 then
       h:=Inverse(f); /* Map from A to B */
       aut:= [h(aL): aL in A | not IsInner(h(aL))];   /* Outer Automorphisms */
       Vects:={g[1] : g in genvecs};
-      BrdRep,BrdOrbs:=OrbitComputeBraid(Vects,#signature-1);
+      braid_Vects:={g[i] : g in braid_genvecs}
+      BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
       TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1); 
       TopOrbsID:=[];
       for j in [1..#TopOrbs] do
@@ -200,9 +215,9 @@ if #genvecs gt 0 then
          orb:=BrdOrbs[j];
          Append(~BrdOrbsID,[*  *]);
          for orbt in orb do
-            for i in [1..#genvecs] do
-               if genvecs[i,1] eq orbt then
-                  Append(~BrdOrbsID[j],genvecs[i,2]);
+            for i in [1..#braid_genvecs] do
+               if braid_genvecs[i,1] eq orbt then
+                  Append(~BrdOrbsID[j],braid_genvecs[i,2]);
                   break i;
                end if;
             end for;
@@ -223,9 +238,6 @@ if #genvecs gt 0 then
   end if; /* whether 1 generating vector or more */
 end if;   /* whether any generating vectors */
 '''
-
-# Update the database for families of single vectors
-# def update_database_single
 
 def update_database(magma_output):
     braid_classes = {}
@@ -268,6 +280,8 @@ def run_magma(family):
             big_passports.add(vector['passport_label'])
             compute_braid = True
         code += action_code.format(**vector)
+        if compute_braid:
+            code += braid_action_code.format(**vector)
     code += orbits_code
     update_database(yaml.load(magma.eval(code)))
 
