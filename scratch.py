@@ -3,6 +3,7 @@ import pymongo
 import yaml
 from bson import ObjectId
 from sage.interfaces.magma import Magma
+from sets import Set
 
 magma = Magma()
 
@@ -193,7 +194,7 @@ if #genvecs gt 0 then
       h:=Inverse(f); /* Map from A to B */
       aut:= [h(aL): aL in A | not IsInner(h(aL))];   /* Outer Automorphisms */
       Vects:={g[1] : g in genvecs};
-      braid_Vects:={g[i] : g in braid_genvecs}
+      braid_Vects:={g[1] : g in braid_genvecs};
       BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
       TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1); 
       TopOrbsID:=[];
@@ -283,7 +284,9 @@ def run_magma(family):
         if compute_braid:
             code += braid_action_code.format(**vector)
     code += orbits_code
-    update_database(yaml.load(magma.eval(code)))
+    magma_output = magma.eval(code)
+    print magma_output
+    update_database(yaml.load(magma_output))
 
 for label in cap.find({'genus': 2}).distinct('label'):
     family = cap.find({'label': label}, {
