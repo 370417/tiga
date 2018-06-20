@@ -272,6 +272,7 @@ def run_magma(family):
         return
     family.sort('total_label', pymongo.DESCENDING)
     big_passports = Set()
+    skipped_vectors = []
     code = helper_code + top_matter.format(**family[0])
     for vector in family:
         compute_braid = False
@@ -283,8 +284,12 @@ def run_magma(family):
         code += action_code.format(**vector)
         if compute_braid:
             code += braid_action_code.format(**vector)
+        else:
+            skipped_vectors.append(vector['_id'])
     code += orbits_code
     magma_output = magma.eval(code)
+    for vector in skipped_vectors:
+        magma_output += '\n  - [{}]'.format(vector)
     print magma_output
     update_database(yaml.load(magma_output))
 
