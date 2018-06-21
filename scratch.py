@@ -257,13 +257,13 @@ def update_database(magma_output):
         braid_label = cap.find({'_id': ObjectId(braid_class)})
         top_label = cap.find({'_id': ObjectId(top_class)})
         if vector_id == braid_class and vector_id == top_class:
-            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['total_label'], 'topological': top_label[0]['total_label'], 'braid_rep': True, 'top_rep': True}})
+            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['cc'], 'topological': top_label[0]['cc'], 'braid_rep': True, 'top_rep': True}})
         elif vector_id != braid_class and vector_id == top_class:
-            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['total_label'], 'topological': top_label[0]['total_label'], 'braid_rep': False, 'top_rep': True}})
+            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['cc'], 'topological': top_label[0]['cc'], 'braid_rep': False, 'top_rep': True}})
         elif vector_id == braid_class and vector_id != top_class:
-            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['total_label'], 'topological': top_label[0]['total_label'], 'braid_rep': True, 'top_rep': False}})    
+            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['cc'], 'topological': top_label[0]['cc'], 'braid_rep': True, 'top_rep': False}})    
         else:
-            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['total_label'], 'topological': top_label[0]['total_label'], 'braid_rep': False, 'top_rep': False}})
+            cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_label[0]['cc'], 'topological': top_label[0]['cc'], 'braid_rep': False, 'top_rep': False}})
 
 def run_magma(family):
     if family.count() == 1:
