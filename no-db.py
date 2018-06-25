@@ -1,7 +1,28 @@
 import yaml
+from bson import ObjectId
+from bson.json_util import loads, dumps
 from sage.interfaces.magma import Magma
+from sets import Set
+import sys
+import os
 
 magma = Magma()
+
+# get file name as command-line argument
+if len(sys.argv) == 1:
+    sys.exit('Please give an input file name as a command-line argument. ')
+input_file_name = sys.argv[1]
+output_file_name = input_file_name
+if output_file_name.endswith('.json'):
+    output_file_name = input_file_name[:-5]
+output_file_name += '.json'
+input_file = open(input_file_name, 'r')
+output_file = open(output_file_name, 'a')
+
+# Flush changes in a file to disk
+def flush(file):
+    file.flush()
+    os.fsync(file.fileno())
 
 helper_code = '''
 /* helper functions for orbits */
@@ -187,9 +208,13 @@ if #genvecs gt 0 then
       h:=Inverse(f); /* Map from A to B */
       aut:= [h(aL): aL in A | not IsInner(h(aL))];   /* Outer Automorphisms */
       Vects:={g[1] : g in genvecs};
-      braid_Vects:={g[i] : g in braid_genvecs}
+      braid_Vects:={g[1] : g in braid_genvecs};
       BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
-      TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1); 
+      if #BrdRep eq 1 then
+         TopRep,TopOrbs:=BrdRep,BrdOrbs;
+      else
+         TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1);    
+      end if;
       TopOrbsID:=[];
       for j in [1..#TopOrbs] do
          orb:=TopOrbs[j];
@@ -233,61 +258,55 @@ if #genvecs gt 0 then
 end if;   /* whether any generating vectors */
 '''
 
-def update_database(magma_output):
-    braid_classes = {}
-    top_classes = {}
-    for vector_ids in magma_output['braid']:
-        representative = min(vector_ids)
-        for vector_id in vector_ids:
-            braid_classes[vector_id] = representative
-    for vector_ids in magma_output['topological']:
-        representative = min(vector_ids)
-        for vector_id in vector_ids:
-            top_classes[vector_id] = representative
-    for vector_id in braid_classes:
-        braid_class = braid_classes[vector_id]
-        top_class = top_classes[vector_id]
-        braid_rep = cap.find({'_id': ObjectId(braid_class)})
-        top_rep = cap.find({'_id': ObjectId(top_class)})
-        cap.update_one({'_id': ObjectId(vector_id)}, {'$set': {'braid': braid_rep[0]['cc'], 'topological': top_rep[0]['cc']}})
+def find_representatives(orbits):
+    reps = {}
+    for orbit in orbits:
+        rep = min(orbit)
+        for object_id in orbit:
+            reps[object_id] = rep
+    return reps
+
+def save_output(label, magma_output):
+    output_file.write('# {label}')
+    braid_reps = find_representatives(magma_output['braid'])
+    top_reps = find_representatives(magma_output['topological'])
+    for object_id in braid_reps:
+        braid_rep = braid_reps[object_id]
+        top_rep = top_reps[object_id]
+        output_file.write('''
+{object_id}:
+  topological: {top_rep}
+  braid: {braid_rep}
+''')
+    flush(output_file)
 
 def run_magma(family):
+    label = family[0]['label']
     if family.count() == 1:
         vector_id = family[0]['_id']
-        update_database({
+        save_output(label, {
             'braid': [[vector_id]],
             'topological': [[vector_id]]})
         return
-    family.sort('total_label', pymongo.DESCENDING)
-    big_passports = Set()
+    compute_braid = any(vec['cc'][1] > 1 for vec in family)
     code = helper_code + top_matter.format(**family[0])
     for vector in family:
-        compute_braid = False
-        if vector['passport_label'] in big_passports:
-            compute_braid = True
-        elif vector['total_label'][-1] != '1':
-            big_passports.add(vector['passport_label'])
-            compute_braid = True
         code += action_code.format(**vector)
         if compute_braid:
             code += braid_action_code.format(**vector)
     code += orbits_code
-    magma_output = yaml.load(magma.eval(code))
+    magma_output = magma.eval(code)
+    if not compute_braid:
+        for vector in family:
+            magma_output += '\n  - [{}]'.format(vector)
     print magma_output
-    update_database(magma_output)
+    save_output(label, yaml.load(magma_output))
 
-data_file = open('genus2.yml','r+')
-data = yaml.safe_load(data_file)
-yaml.dump(data, data_file)
-
-for label in cap.find({'genus': 2}).distinct('label'):
-    family = cap.find({'label': label}, {
-        'label': 1,
-        'passport_label': 1,
-        'total_label': 1,
-        'gen_vectors': 1,
-        'group': 1,
-        'signature': 1,
-        'genus': 1})
-    print family[0]['label']
+for line in input_file:
+    family = loads(line)
+    print "Starting family {0}".format(family[0]['label'])
     run_magma(family)
+print "Done"
+
+close(intput_file)
+close(output_file)
