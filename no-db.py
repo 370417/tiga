@@ -15,7 +15,7 @@ input_file_name = sys.argv[1]
 output_file_name = input_file_name
 if output_file_name.endswith('.json'):
     output_file_name = input_file_name[:-5]
-output_file_name += '.json'
+output_file_name += '-output.json'
 input_file = open(input_file_name, 'r')
 output_file = open(output_file_name, 'a')
 
@@ -210,11 +210,12 @@ if #genvecs gt 0 then
       Vects:={g[1] : g in genvecs};
       braid_Vects:={g[1] : g in braid_genvecs};
       BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
-      if #BrdRep eq 1 then
-         TopRep,TopOrbs:=BrdRep,BrdOrbs;
-      else
+//      if #BrdRep eq 1 then
+//         TopRep:=BrdRep;
+//         TopOrbs:=BrdOrbs;
+//      else
          TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1);    
-      end if;
+//      end if;
       TopOrbsID:=[];
       for j in [1..#TopOrbs] do
          orb:=TopOrbs[j];
@@ -267,22 +268,22 @@ def find_representatives(orbits):
     return reps
 
 def save_output(label, magma_output):
-    output_file.write('# {label}')
+    output_file.write('# {}'.format(label))
     braid_reps = find_representatives(magma_output['braid'])
     top_reps = find_representatives(magma_output['topological'])
     for object_id in braid_reps:
         braid_rep = braid_reps[object_id]
         top_rep = top_reps[object_id]
         output_file.write('''
-{object_id}:
-  topological: {top_rep}
-  braid: {braid_rep}
-''')
+{0}:
+  topological: {1}
+  braid: {2}
+'''.format(object_id, top_rep, braid_rep))
     flush(output_file)
 
 def run_magma(family):
     label = family[0]['label']
-    if family.count() == 1:
+    if len(family) == 1:
         vector_id = family[0]['_id']
         save_output(label, {
             'braid': [[vector_id]],
@@ -298,8 +299,7 @@ def run_magma(family):
     magma_output = magma.eval(code)
     if not compute_braid:
         for vector in family:
-            magma_output += '\n  - [{}]'.format(vector)
-    print magma_output
+            magma_output += '\n  - [{}]'.format(vector['_id'])
     save_output(label, yaml.load(magma_output))
 
 for line in input_file:
