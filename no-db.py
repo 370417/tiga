@@ -251,7 +251,8 @@ if #genvecs gt 0 then
       else
          BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
          if #BrdRep eq 1 then
-            TopRep,TopOrbs:=BrdRep,BrdOrbs;
+            TopRep:=BrdRep;
+            TopOrbs:=BrdOrbs;
          else
             TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1);    
          end if;
