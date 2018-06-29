@@ -247,7 +247,7 @@ if #genvecs gt 0 then
       braid_Vects:={g[1] : g in braid_genvecs};
       if IsAbelian(G) then
          TopRep,TopOrbs:=AbelianOrbitComputeAut(Vects,aut,#signature-1);
-         BrdOrbs:=[]
+         BrdOrbs:=[];
       else
          BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
          if #BrdRep eq 1 then
