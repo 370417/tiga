@@ -15,7 +15,7 @@ input_file_name = sys.argv[1]
 output_file_name = input_file_name
 if output_file_name.endswith('.json'):
     output_file_name = input_file_name[:-5]
-output_file_name += '.json'
+output_file_name += 'output.json'
 input_file = open(input_file_name, 'r')
 output_file = open(output_file_name, 'a')
 
@@ -67,6 +67,7 @@ OuterAutOrbit:=function(L,G);
    end for;
    return L;
 end function;
+
 OrbitComputeBraid:=function(Vects,r);
    T:={};
    Orbs:=[];
@@ -97,6 +98,7 @@ OrbitComputeBraid:=function(Vects,r);
    end while;  /* while Vects not empty */
    return T, Orbs;
 end function;
+
 OrbitComputeAut:=function(Vects,A,r);
    /* T will be list of final orbits, A is outer auts */
    T:={};
@@ -112,6 +114,40 @@ OrbitComputeAut:=function(Vects,A,r);
          sizeOrb:=#Orb;
          Orb:=OuterAutOrbit(Orb,A);
          Orb:=BrdOrbit(Orb,r);
+         if #Orb eq sizeOrb  then
+            tempcount:=1;  /* stops when outer aut doesn't add more */
+            N:=genvecs meet Orb;
+            Append(~Orbs,N);
+         else
+            Vects diff:=Orb;
+            if #Vects eq 0 then
+                N:=genvecs meet Orb;
+                Append(~Orbs,N);
+               tempcount:=1;/* stop if all in one orbit or got to last */
+            end if;
+         end if;    
+      end while;   
+   end while;  /* while Vects not empty */
+   return T, Orbs;
+end function;
+
+AbelianOrbitComputeAut:=function(Vects,A,r);
+
+   /* T will be list of final orbits, A is outer auts */
+   T:={};
+   Orbs:=[];
+
+   genvecs:=Vects; 
+   while Vects ne {} do
+      rand:=Random(Vects);
+      T join:={rand};
+
+      tempcount:=0;
+      Orb:={rand};
+      /* t1:=Cputime(); */
+      while (tempcount eq 0) do
+         sizeOrb:=#Orb;
+         Orb:=OuterAutOrbit(Orb,A);
          if #Orb eq sizeOrb  then
             tempcount:=1;  /* stops when outer aut doesn't add more */
             N:=genvecs meet Orb;
@@ -209,11 +245,16 @@ if #genvecs gt 0 then
       aut:= [h(aL): aL in A | not IsInner(h(aL))];   /* Outer Automorphisms */
       Vects:={g[1] : g in genvecs};
       braid_Vects:={g[1] : g in braid_genvecs};
-      BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
-      if #BrdRep eq 1 then
-         TopRep,TopOrbs:=BrdRep,BrdOrbs;
+      if IsAbelian(G) then
+         TopRep,TopOrbs:=AbelianOrbitComputeAut(Vects,aut,#signature-1);
+         BrdOrbs:=[]
       else
-         TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1);    
+         BrdRep,BrdOrbs:=OrbitComputeBraid(braid_Vects,#signature-1);
+         if #BrdRep eq 1 then
+            TopRep,TopOrbs:=BrdRep,BrdOrbs;
+         else
+            TopRep,TopOrbs:=OrbitComputeAut(Vects,aut,#signature-1);    
+         end if;
       end if;
       TopOrbsID:=[];
       for j in [1..#TopOrbs] do
