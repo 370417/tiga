@@ -1,4 +1,5 @@
 import yaml
+import json
 from bson import ObjectId
 from bson.json_util import loads, dumps
 from sage.interfaces.magma import Magma
@@ -284,16 +285,12 @@ if #genvecs gt 0 then
             end for;
          end for;
       end for;
-      // PrintFile(prtfile,"topological:");
       print "topological:";
       for j in [1..#TopOrbs]  do
-         // PrintFile(prtfile,PrtOrbit(TopOrbsID[j]));
          print PrtOrbit(TopOrbsID[j]);
       end for;
-      // PrintFile(prtfile,"braid:");
       print "braid:";
       for j in [1..#BrdOrbs] do
-         // PrintFile(prtfile,PrtOrbit(BrdOrbsID[j]));
          print PrtOrbit(BrdOrbsID[j]);
       end for;
   end if; /* whether 1 generating vector or more */
@@ -330,6 +327,8 @@ def run_magma(family):
             'braid': [[vector_id]],
             'topological': [[vector_id]]})
         return
+    group = json.loads(family[0]['group'])
+    is_abelian = magma.eval("IsAbelian(SmallGroup({},{}))".format(*group)) == 'true'
     compute_braid = any(vec['cc'][1] > 1 for vec in family)
     code = helper_code + top_matter.format(**family[0])
     for vector in family:
@@ -338,7 +337,7 @@ def run_magma(family):
             code += braid_action_code.format(**vector)
     code += orbits_code
     magma_output = magma.eval(code)
-    if not compute_braid:
+    if not compute_braid or is_abelian:
         for vector in family:
             magma_output += '\n  - [{}]'.format(vector['_id'])
     save_output(label, yaml.load(magma_output))
