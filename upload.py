@@ -48,7 +48,6 @@ for file_name in sys.argv[1:]:
     output_file = open(file_name, 'r')
     vectors = yaml.load(output_file.read())
     for vector in vectors:
-        #print vector
         entry = {}
         group = vector['group']
         entry['genus'] = int(file_name[2])
@@ -59,7 +58,9 @@ for file_name in sys.argv[1:]:
             entry['con'] = str(vector['con'])
         entry['cc'] = vector['cc']
         gen_vectors = vector['gen_vecs']
-        gen_vectors = [vect for vect in gen_vectors if vect != range(1, vect[len(vect) - 1] + 1)] #Remove identity vector
+        for i, vect in enumerate(gen_vectors):
+            if vect == range(1, vect[len(vect) - 1] + 1):
+                gen_vectors[i] = 'Id(G)'
         print gen_vectors
         entry['gen_vectors']= gen_vectors
         signature = vector['signature']
