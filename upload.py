@@ -21,6 +21,8 @@ def generate_label(entry, group, signature):
         else:
             separator = '.'
         label += str(sig) + separator
+    if len(signature) == 1:
+        label += '0'
     return label
 
 def generate_passport_label(entry, label):
@@ -46,14 +48,21 @@ for file_name in sys.argv[1:]:
     output_file = open(file_name, 'r')
     vectors = yaml.load(output_file.read())
     for vector in vectors:
-        #print vector
         entry = {}
         group = vector['group']
-        entry['genus'] = file_name[2]
+        entry['genus'] = int(file_name[2])
         entry['group'] = str(group)
-        entry['con'] = str(vector['con'])
+        if len(vector['con']) == 0:
+            entry['con'] = str([0])
+        else:
+            entry['con'] = str(vector['con'])
         entry['cc'] = vector['cc']
-        entry['gen_vectors']= vector['gen_vecs']
+        gen_vectors = vector['gen_vecs']
+        for i, vect in enumerate(gen_vectors):
+            if vect == range(1, vect[len(vect) - 1] + 1):
+                gen_vectors[i] = 'Id(G)'
+        print gen_vectors
+        entry['gen_vectors']= gen_vectors
         signature = vector['signature']
         entry['signature'] = str(signature)
         entry['g0'] = signature[0]
@@ -64,9 +73,9 @@ for file_name in sys.argv[1:]:
         entry['total_label'] = generate_total_label(entry, entry['passport_label'])
         if 'full_auto' in vector:
             full_gp_label = vector['full_auto']
-            entry['full_auto'] = full_gp_label
+            entry['full_auto'] = str(full_gp_label)
             signH = vector['signH']
-            entry['signH'] = signH
+            entry['signH'] = str(signH)
             entry['full_label'] = generate_full_label(entry, full_gp_label, signH)
         entry['jacobian_decomp'] = vector['decompose_jac']
         print entry
