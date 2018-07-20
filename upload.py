@@ -6,8 +6,8 @@ import sys
 C = MongoClient(port=int(27017))
 cap = C.curve_automorphisms.passports
 
-if len(sys.argv) == 1:
-    sys.exit('Please give one or more output file names as command-line arguments')
+if len(sys.argv)== 1 or len(sys.argv) % 2 != 1:
+    sys.exit('Please give one or more output file names \n together with their corresponding genus values as command-line arguments.\n Example: \n sage --python upload.py g02finaldatag0 2')
 
 def generate_label(entry, group, signature):
     label = str(entry['genus']) + '.' +\
@@ -44,24 +44,28 @@ def generate_full_label(entry, full_gp_label, signH):
         full_label += separator + str(vector)
     return full_label
 
-for file_name in sys.argv[1:]:
+for i in range(1, len(sys.argv), 2):
+    print sys.argv
+    file_name = sys.argv[i]
+    genus = int(sys.argv[i+1])
     output_file = open(file_name, 'r')
     vectors = yaml.load(output_file.read())
     for vector in vectors:
         entry = {}
+        entry['genus'] = genus #Does not work for genus > 9
         group = vector['group']
-        entry['genus'] = int(file_name[2])
         entry['group'] = str(group)
+        entry['group_order'] = group[0]
         if len(vector['con']) == 0:
             entry['con'] = str([0])
         else:
             entry['con'] = str(vector['con'])
         entry['cc'] = vector['cc']
         gen_vectors = vector['gen_vecs']
-        for i, vect in enumerate(gen_vectors):
-            if vect == range(1, vect[len(vect) - 1] + 1):
-                gen_vectors[i] = 'Id(G)'
-        print gen_vectors
+        #for i, vect in enumerate(gen_vectors):
+        #    if vect == range(1, vect[len(vect) - 1] + 1):
+        #        gen_vectors[i] = 'Id(G)'
+        #print gen_vectors
         entry['gen_vectors']= gen_vectors
         signature = vector['signature']
         entry['signature'] = str(signature)
@@ -78,6 +82,6 @@ for file_name in sys.argv[1:]:
             entry['signH'] = str(signH)
             entry['full_label'] = generate_full_label(entry, full_gp_label, signH)
         entry['jacobian_decomp'] = vector['decompose_jac']
-        print entry
+        #print entry
         cap.insert(entry)
 
