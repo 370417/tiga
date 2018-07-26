@@ -1,0 +1,47 @@
+Starting family 9.2-1.0.2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2
+Starting family 9.6-2.0.2-2-3-3-3-6-6
+Starting family 9.7-1.0.7-7-7-7-7
+Starting family 9.12-1.0.2-3-3-4-4
+Starting family 9.12-4.0.2-2-3-6-6
+Starting family 9.12-2.0.2-2-3-4-12
+Starting family 9.12-4.0.2-2-2-2-2-6
+Starting family 9.20-4.0.2-2-2-2-5
+Starting family 9.24-8.0.2-2-2-2-3
+Starting family 9.24-12.0.2-2-2-2-3
+Starting family 9.32-27.0.2-2-2-2-2
+Starting family 9.14-2.0.2-7-7-14
+Starting family 9.19-1.0.19-19-19
+Starting family 9.32-22.0.2-2-4-4
+Starting family 9.12-5.0.6-6-6-6
+Starting family 9.32-3.0.4-8-8
+Starting family 9.10-2.0.2-2-2-2-5-5
+Starting family 9.12-4.0.2-2-2-2-3-3
+Starting family 9.18-2.0.2-2-18-18
+Starting family 9.24-1.0.8-8-12
+Starting family 9.64-12.0.2-8-8
+Starting family 10.2-1.0.2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2
+Starting family 10.4-1.0.2-4-4-4-4-4-4-4-4
+Starting family 10.6-2.0.3-3-3-3-3-6-6
+Starting family 10.6-1.0.2-2-3-3-3-3-3-3
+Starting family 10.10-2.0.2-5-5-5-10
+Starting family 10.12-1.0.2-4-4-4-4
+Starting family 10.12-4.0.2-2-6-6-6
+Starting family 10.12-3.0.2-2-2-3-3-3
+Starting family 10.18-4.0.2-2-2-2-2-2
+Interrupting Magma...
+Traceback (most recent call last):
+  File "no-db.py", line 350, in <module>
+    sys.stdout.flush()
+  File "no-db.py", line 340, in run_magma
+    magma_output = magma.eval(code)
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/magma.py", line 558, in eval
+    ans = Expect.eval(self, x, **kwds).replace('\\\n', '')
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 1296, in eval
+    return self._eval_line_using_file(code)
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 782, in _eval_line_using_file
+    s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False, restart_if_needed=False)
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 974, in _eval_line
+    self._keyboard_interrupt()
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 996, in _keyboard_interrupt
+    raise KeyboardInterrupt("Ctrl-c pressed while running %s"%self)
+KeyboardInterrupt: Ctrl-c pressed while running Magma

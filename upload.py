@@ -45,14 +45,15 @@ def generate_full_label(entry, full_gp_label, signH):
     return full_label
 
 for i in range(1, len(sys.argv), 2):
-    print sys.argv
     file_name = sys.argv[i]
     genus = int(sys.argv[i+1])
     output_file = open(file_name, 'r')
     vectors = yaml.load(output_file.read())
+    print type(vectors)
     for vector in vectors:
+        print type(vector)
         entry = {}
-        entry['genus'] = genus #Does not work for genus > 9
+        entry['genus'] = genus
         group = vector['group']
         entry['group'] = str(group)
         entry['group_order'] = group[0]
@@ -60,13 +61,8 @@ for i in range(1, len(sys.argv), 2):
             entry['con'] = str([0])
         else:
             entry['con'] = str(vector['con'])
-        entry['cc'] = vector['cc']
-        gen_vectors = vector['gen_vecs']
-        #for i, vect in enumerate(gen_vectors):
-        #    if vect == range(1, vect[len(vect) - 1] + 1):
-        #        gen_vectors[i] = 'Id(G)'
-        #print gen_vectors
-        entry['gen_vectors']= gen_vectors
+        entry['cc'] = vector['cc'] 
+        entry['gen_vectors']= vector['gen_vecs']
         signature = vector['signature']
         entry['signature'] = str(signature)
         entry['g0'] = signature[0]
@@ -83,5 +79,5 @@ for i in range(1, len(sys.argv), 2):
             entry['full_label'] = generate_full_label(entry, full_gp_label, signH)
         entry['jacobian_decomp'] = vector['decompose_jac']
         #print entry
-        cap.insert(entry)
+        #cap.insert(entry)
 

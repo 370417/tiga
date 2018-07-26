@@ -6,6 +6,7 @@ from sage.interfaces.magma import Magma
 from sets import Set
 import sys
 import os
+import time
 
 magma = Magma()
 
@@ -342,11 +343,19 @@ def run_magma(family):
             magma_output += '\n  - [{}]'.format(vector['_id'])
     save_output(label, yaml.load(magma_output))
 
+sum_time = 0.0        
 for line in input_file:
     family = loads(line)
     print "Starting family {0}".format(family[0]['label'])
+    sys.stdout.flush()
+    start = time.time()
     run_magma(family)
-print "Done"
+    end = time.time()
+    sum_time += end - start
+    print end - start
+    sys.stdout.flush()
+print sum_time
+print "Done" + input_file_name
 
 input_file.close()
 output_file.close()

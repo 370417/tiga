@@ -1,0 +1,22 @@
+Starting family 13.2-1.0.2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2
+0.000288963317871
+Starting family 13.6-2.0.2-2-2-2-2-2-2-2-2-3-6
+0.244988918304
+Starting family 13.8-3.0.2-2-2-2-2-2-2-2-2-2
+Interrupting Magma...
+Traceback (most recent call last):
+  File "no-db.py", line 352, in <module>
+    run_magma(family)
+  File "no-db.py", line 340, in run_magma
+    magma_output = magma.eval(code)
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/magma.py", line 558, in eval
+    ans = Expect.eval(self, x, **kwds).replace('\\\n', '')
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 1296, in eval
+    return self._eval_line_using_file(code)
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 782, in _eval_line_using_file
+    s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False, restart_if_needed=False)
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 974, in _eval_line
+    self._keyboard_interrupt()
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/expect.py", line 996, in _keyboard_interrupt
+    raise KeyboardInterrupt("Ctrl-c pressed while running %s"%self)
+KeyboardInterrupt: Ctrl-c pressed while running Magma

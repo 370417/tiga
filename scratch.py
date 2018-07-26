@@ -289,7 +289,7 @@ def run_magma(family):
     print magma_output
     update_database(yaml.load(magma_output))
 
-for label in cap.find({'genus': 2}).distinct('label'):
+for label in cap.find({'genus': 3}).distinct('label'):
     family = cap.find({'label': label}, {
         'label': 1,
         'passport_label': 1,

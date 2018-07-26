@@ -1,0 +1,18 @@
+Starting family 12.8-3.0.2-2-2-2-2-4-4-4
+Interrupting Magma...
+Traceback (most recent call last):
+  File "no-db.py", line 350, in <module>
+    sys.stdout.flush()
+  File "no-db.py", line 340, in run_magma
+    magma_output = magma.eval(code)
+  File "/opt/SageMath/local/lib/python2.7/site-packages/sage/interfaces/magma.py", line 561, in eval
+    ans = Expect.eval(self, x, **kwds).replace('\\\n', '')
+  File "/opt/SageMath/local/lib/python2.7/site-packages/sage/interfaces/expect.py", line 1288, in eval
+    return self._eval_line_using_file(code)
+  File "/opt/SageMath/local/lib/python2.7/site-packages/sage/interfaces/expect.py", line 776, in _eval_line_using_file
+    s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False, restart_if_needed=False)
+  File "/opt/SageMath/local/lib/python2.7/site-packages/sage/interfaces/expect.py", line 968, in _eval_line
+    self._keyboard_interrupt()
+  File "/opt/SageMath/local/lib/python2.7/site-packages/sage/interfaces/expect.py", line 990, in _keyboard_interrupt
+    raise KeyboardInterrupt("Ctrl-c pressed while running %s"%self)
+KeyboardInterrupt: Ctrl-c pressed while running Magma

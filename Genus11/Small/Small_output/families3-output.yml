@@ -1,0 +1,688 @@
+# 11.16-6.0.4-4-8-8
+5941a7513fce4a500fb39b29:
+  topological: 5941a74f3fce4a500fb39b26
+  braid: 5941a7513fce4a500fb39b29
+
+5941a8983fce4a500fb39d74:
+  topological: 5941a8963fce4a500fb39d71
+  braid: 5941a8973fce4a500fb39d73
+
+5941a8963fce4a500fb39d71:
+  topological: 5941a8963fce4a500fb39d71
+  braid: 5941a8963fce4a500fb39d71
+
+5941a8963fce4a500fb39d72:
+  topological: 5941a8963fce4a500fb39d71
+  braid: 5941a8963fce4a500fb39d71
+
+5941a7503fce4a500fb39b28:
+  topological: 5941a74f3fce4a500fb39b27
+  braid: 5941a7503fce4a500fb39b28
+
+5941a74f3fce4a500fb39b26:
+  topological: 5941a74f3fce4a500fb39b26
+  braid: 5941a74f3fce4a500fb39b26
+
+5941a74f3fce4a500fb39b27:
+  topological: 5941a74f3fce4a500fb39b27
+  braid: 5941a74f3fce4a500fb39b27
+
+5941a8973fce4a500fb39d73:
+  topological: 5941a8963fce4a500fb39d71
+  braid: 5941a8973fce4a500fb39d73
+# 11.12-2.0.3-3-4-4-6
+5941a0f43fce4a500fb38fae:
+  topological: 5941a0f33fce4a500fb38fad
+  braid: 5941a0f43fce4a500fb38fae
+
+5941a0f53fce4a500fb38fb0:
+  topological: 5941a0f33fce4a500fb38fad
+  braid: 5941a0f53fce4a500fb38fb0
+
+5941a0f33fce4a500fb38fad:
+  topological: 5941a0f33fce4a500fb38fad
+  braid: 5941a0f33fce4a500fb38fad
+
+5941a0f43fce4a500fb38faf:
+  topological: 5941a0f33fce4a500fb38fad
+  braid: 5941a0f43fce4a500fb38faf
+# 11.10-2.0.2-5-10-10-10
+59418fa23fce4a500fb370fb:
+  topological: 59418fa23fce4a500fb370fb
+  braid: 59418fa23fce4a500fb370fb
+
+59418f9d3fce4a500fb370f2:
+  topological: 59418f9c3fce4a500fb370f0
+  braid: 59418f9d3fce4a500fb370f2
+
+59418f9f3fce4a500fb370f5:
+  topological: 59418f9b3fce4a500fb370ee
+  braid: 59418f9f3fce4a500fb370f5
+
+59418f9f3fce4a500fb370f6:
+  topological: 59418f9f3fce4a500fb370f6
+  braid: 59418f9f3fce4a500fb370f6
+
+59418fa23fce4a500fb370fd:
+  topological: 59418f9c3fce4a500fb370f0
+  braid: 59418fa23fce4a500fb370fd
+
+59418f9b3fce4a500fb370ee:
+  topological: 59418f9b3fce4a500fb370ee
+  braid: 59418f9b3fce4a500fb370ee
+
+59418fa03fce4a500fb370f7:
+  topological: 59418fa03fce4a500fb370f7
+  braid: 59418fa03fce4a500fb370f7
+
+59418f9b3fce4a500fb370ef:
+  topological: 59418f9b3fce4a500fb370ef
+  braid: 59418f9b3fce4a500fb370ef
+
+59418fa13fce4a500fb370fa:
+  topological: 59418f9e3fce4a500fb370f4
+  braid: 59418fa13fce4a500fb370fa
+
+59418f9c3fce4a500fb370f1:
+  topological: 59418f9c3fce4a500fb370f1
+  braid: 59418f9c3fce4a500fb370f1
+
+59418f9e3fce4a500fb370f3:
+  topological: 59418f9e3fce4a500fb370f3
+  braid: 59418f9e3fce4a500fb370f3
+
+59418fa23fce4a500fb370fc:
+  topological: 59418f9f3fce4a500fb370f6
+  braid: 59418fa23fce4a500fb370fc
+
+59418fa03fce4a500fb370f8:
+  topological: 59418f9b3fce4a500fb370ef
+  braid: 59418fa03fce4a500fb370f8
+
+59418f9c3fce4a500fb370f0:
+  topological: 59418f9c3fce4a500fb370f0
+  braid: 59418f9c3fce4a500fb370f0
+
+59418fa03fce4a500fb370f9:
+  topological: 59418f9c3fce4a500fb370f0
+  braid: 59418fa03fce4a500fb370f9
+
+59418f9e3fce4a500fb370f4:
+  topological: 59418f9e3fce4a500fb370f4
+  braid: 59418f9e3fce4a500fb370f4
+# 11.8-1.0.2-4-4-4-8-8
+59418d833fce4a500fb36cf9:
+  topological: 59418d833fce4a500fb36cf9
+  braid: 59418d833fce4a500fb36cf9
+
+59418d873fce4a500fb36d00:
+  topological: 59418d873fce4a500fb36d00
+  braid: 59418d873fce4a500fb36d00
+
+59418d873fce4a500fb36d01:
+  topological: 59418d873fce4a500fb36d00
+  braid: 59418d873fce4a500fb36d01
+
+59418d853fce4a500fb36cfd:
+  topological: 59418d853fce4a500fb36cfd
+  braid: 59418d853fce4a500fb36cfd
+
+59418d853fce4a500fb36cfc:
+  topological: 59418d853fce4a500fb36cfc
+  braid: 59418d853fce4a500fb36cfc
+
+59418d893fce4a500fb36d04:
+  topological: 59418d843fce4a500fb36cfa
+  braid: 59418d893fce4a500fb36d04
+
+59418d863fce4a500fb36cfe:
+  topological: 59418d853fce4a500fb36cfc
+  braid: 59418d863fce4a500fb36cfe
+
+59418d843fce4a500fb36cfb:
+  topological: 59418d843fce4a500fb36cfa
+  braid: 59418d843fce4a500fb36cfb
+
+59418d843fce4a500fb36cfa:
+  topological: 59418d843fce4a500fb36cfa
+  braid: 59418d843fce4a500fb36cfa
+
+59418d883fce4a500fb36d03:
+  topological: 59418d833fce4a500fb36cf9
+  braid: 59418d883fce4a500fb36d03
+
+59418d883fce4a500fb36d02:
+  topological: 59418d843fce4a500fb36cfa
+  braid: 59418d883fce4a500fb36d02
+
+59418d863fce4a500fb36cff:
+  topological: 59418d863fce4a500fb36cff
+  braid: 59418d863fce4a500fb36cff
+# 11.6-2.0.3-3-3-6-6-6-6
+594189f33fce4a500fb36652:
+  topological: 594189f33fce4a500fb36652
+  braid: 594189f33fce4a500fb36652
+
+594189f63fce4a500fb36657:
+  topological: 594189f63fce4a500fb36657
+  braid: 594189f63fce4a500fb36657
+
+594189f53fce4a500fb36655:
+  topological: 594189f53fce4a500fb36655
+  braid: 594189f53fce4a500fb36655
+
+594189f53fce4a500fb36656:
+  topological: 594189f53fce4a500fb36656
+  braid: 594189f53fce4a500fb36656
+
+594189f43fce4a500fb36654:
+  topological: 594189f43fce4a500fb36654
+  braid: 594189f43fce4a500fb36654
+
+594189f43fce4a500fb36653:
+  topological: 594189f43fce4a500fb36653
+  braid: 594189f43fce4a500fb36653
+# 11.16-11.0.2-2-4-4-4
+5941a2203fce4a500fb391ca:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a21f3fce4a500fb391c9
+
+5941a2253fce4a500fb391d4:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2233fce4a500fb391d1
+
+5941a2233fce4a500fb391d1:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2233fce4a500fb391d1
+
+5941a2203fce4a500fb391cb:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a21f3fce4a500fb391c9
+
+5941a2263fce4a500fb391d6:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2263fce4a500fb391d5
+
+5941a2263fce4a500fb391d5:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2263fce4a500fb391d5
+
+5941a2243fce4a500fb391d2:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2233fce4a500fb391d1
+
+5941a2243fce4a500fb391d3:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2233fce4a500fb391d1
+
+5941a2223fce4a500fb391cf:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2213fce4a500fb391cd
+
+5941a2213fce4a500fb391cc:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a21f3fce4a500fb391c9
+
+5941a2273fce4a500fb391d7:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2263fce4a500fb391d5
+
+5941a2213fce4a500fb391ce:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2213fce4a500fb391cd
+
+5941a2233fce4a500fb391d0:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2213fce4a500fb391cd
+
+5941a2213fce4a500fb391cd:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2213fce4a500fb391cd
+
+5941a2273fce4a500fb391d8:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a2263fce4a500fb391d5
+
+5941a21f3fce4a500fb391c9:
+  topological: 5941a21f3fce4a500fb391c9
+  braid: 5941a21f3fce4a500fb391c9
+# 11.16-7.0.2-2-2-8-8
+5941a26e3fce4a500fb3925a:
+  topological: 5941a26b3fce4a500fb39254
+  braid: 5941a26e3fce4a500fb3925a
+
+5941a26e3fce4a500fb3925b:
+  topological: 5941a26b3fce4a500fb39254
+  braid: 5941a26e3fce4a500fb3925a
+
+5941a26c3fce4a500fb39257:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26c3fce4a500fb39256
+
+5941a26c3fce4a500fb39256:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26c3fce4a500fb39256
+
+5941a26d3fce4a500fb39258:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26d3fce4a500fb39258
+
+5941a26d3fce4a500fb39259:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26d3fce4a500fb39258
+
+5941a26f3fce4a500fb3925d:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26f3fce4a500fb3925c
+
+5941a26f3fce4a500fb3925c:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26f3fce4a500fb3925c
+
+5941a26b3fce4a500fb39254:
+  topological: 5941a26b3fce4a500fb39254
+  braid: 5941a26b3fce4a500fb39254
+
+5941a26b3fce4a500fb39255:
+  topological: 5941a26b3fce4a500fb39254
+  braid: 5941a26b3fce4a500fb39254
+
+5941a26a3fce4a500fb39253:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26a3fce4a500fb39252
+
+5941a26a3fce4a500fb39252:
+  topological: 5941a26a3fce4a500fb39252
+  braid: 5941a26a3fce4a500fb39252
+# 11.24-12.0.2-2-2-3-3
+5941a5e83fce4a500fb3989e:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e83fce4a500fb3989f:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e53fce4a500fb39899:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e73fce4a500fb3989d:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e43fce4a500fb39897:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e43fce4a500fb39898:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e13fce4a500fb39893:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e13fce4a500fb39892:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5df3fce4a500fb3988f:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5eb3fce4a500fb398a4:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e33fce4a500fb39896:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e93fce4a500fb398a1:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e93fce4a500fb398a0:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e63fce4a500fb3989b:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e63fce4a500fb3989c:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e23fce4a500fb39894:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e23fce4a500fb39895:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5de3fce4a500fb3988e:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5de3fce4a500fb3988d:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e03fce4a500fb39890:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e03fce4a500fb39891:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5ea3fce4a500fb398a3:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5ea3fce4a500fb398a2:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+
+5941a5e53fce4a500fb3989a:
+  topological: 5941a5de3fce4a500fb3988d
+  braid: 5941a5de3fce4a500fb3988d
+# 11.32-39.0.2-2-4-8
+5941a7ce3fce4a500fb39c0a:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7ce3fce4a500fb39c0a
+
+5941a7cc3fce4a500fb39c06:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cc3fce4a500fb39c06
+
+5941a7d13fce4a500fb39c10:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7d13fce4a500fb39c10
+
+5941a7d23fce4a500fb39c11:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7d13fce4a500fb39c10
+
+5941a7d23fce4a500fb39c12:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7d23fce4a500fb39c12
+
+5941a7d03fce4a500fb39c0d:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cf3fce4a500fb39c0c
+
+5941a7cf3fce4a500fb39c0c:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cf3fce4a500fb39c0c
+
+5941a7cd3fce4a500fb39c08:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cd3fce4a500fb39c08
+
+5941a7cb3fce4a500fb39c04:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cb3fce4a500fb39c04
+
+5941a7d13fce4a500fb39c0f:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7d03fce4a500fb39c0e
+
+5941a7ce3fce4a500fb39c09:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cd3fce4a500fb39c08
+
+5941a7cf3fce4a500fb39c0b:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7ce3fce4a500fb39c0a
+
+5941a7cd3fce4a500fb39c07:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cc3fce4a500fb39c06
+
+5941a7d03fce4a500fb39c0e:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7d03fce4a500fb39c0e
+
+5941a7d33fce4a500fb39c13:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7d23fce4a500fb39c12
+
+5941a7cb3fce4a500fb39c05:
+  topological: 5941a7cb3fce4a500fb39c04
+  braid: 5941a7cb3fce4a500fb39c04
+# 11.48-48.0.2-2-3-4
+5941a81b3fce4a500fb39c92:
+  topological: 5941a81b3fce4a500fb39c92
+  braid: 5941a81b3fce4a500fb39c92
+
+5941a81e3fce4a500fb39c97:
+  topological: 5941a81d3fce4a500fb39c94
+  braid: 5941a81e3fce4a500fb39c97
+
+5941a81e3fce4a500fb39c96:
+  topological: 5941a81d3fce4a500fb39c94
+  braid: 5941a81d3fce4a500fb39c94
+
+5941a8203fce4a500fb39c99:
+  topological: 5941a81d3fce4a500fb39c94
+  braid: 5941a81e3fce4a500fb39c97
+
+5941a81f3fce4a500fb39c98:
+  topological: 5941a81d3fce4a500fb39c94
+  braid: 5941a81e3fce4a500fb39c97
+
+5941a81d3fce4a500fb39c94:
+  topological: 5941a81d3fce4a500fb39c94
+  braid: 5941a81d3fce4a500fb39c94
+
+5941a81d3fce4a500fb39c95:
+  topological: 5941a81d3fce4a500fb39c94
+  braid: 5941a81d3fce4a500fb39c94
+
+5941a81c3fce4a500fb39c93:
+  topological: 5941a81b3fce4a500fb39c92
+  braid: 5941a81c3fce4a500fb39c93
+# 11.80-39.0.2-2-2-4
+5941a84f3fce4a500fb39cef:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a8443fce4a500fb39cdb:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8483fce4a500fb39ce3:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8463fce4a500fb39ce0:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a84c3fce4a500fb39ce9:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a8433fce4a500fb39cda:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8443fce4a500fb39cdc:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a84d3fce4a500fb39cec:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a84d3fce4a500fb39ceb:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a84a3fce4a500fb39ce5:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a84a3fce4a500fb39ce6:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a8483fce4a500fb39ce2:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a84e3fce4a500fb39ced:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a84e3fce4a500fb39cee:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a8493fce4a500fb39ce4:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a8473fce4a500fb39ce1:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a84b3fce4a500fb39ce7:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a84b3fce4a500fb39ce8:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+
+5941a8453fce4a500fb39cde:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8453fce4a500fb39cdd:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8433fce4a500fb39cd9:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8423fce4a500fb39cd8:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a8463fce4a500fb39cdf:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8423fce4a500fb39cd8
+
+5941a84c3fce4a500fb39cea:
+  topological: 5941a8423fce4a500fb39cd8
+  braid: 5941a8493fce4a500fb39ce4
+# 11.32-16.0.4-16-16
+5941a9023fce4a500fb39e34:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9023fce4a500fb39e34
+
+5941a9023fce4a500fb39e35:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9023fce4a500fb39e35
+
+5941a9013fce4a500fb39e33:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9013fce4a500fb39e33
+
+5941a9013fce4a500fb39e32:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9013fce4a500fb39e32
+
+5941a8ff3fce4a500fb39e2e:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a8ff3fce4a500fb39e2e
+
+5941a9003fce4a500fb39e2f:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9003fce4a500fb39e2f
+
+5941a8fd3fce4a500fb39e2b:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a8fd3fce4a500fb39e2b
+
+5941a8fe3fce4a500fb39e2d:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a8fe3fce4a500fb39e2d
+
+5941a8fc3fce4a500fb39e2a:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a8fc3fce4a500fb39e2a
+
+5941a9033fce4a500fb39e37:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9033fce4a500fb39e37
+
+5941a9033fce4a500fb39e36:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9033fce4a500fb39e36
+
+5941a8fe3fce4a500fb39e2c:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a8fe3fce4a500fb39e2c
+
+5941a9043fce4a500fb39e38:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9043fce4a500fb39e38
+
+5941a9003fce4a500fb39e30:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9003fce4a500fb39e30
+
+5941a9003fce4a500fb39e31:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9003fce4a500fb39e31
+
+5941a9043fce4a500fb39e39:
+  topological: 5941a8fc3fce4a500fb39e2a
+  braid: 5941a9043fce4a500fb39e39
+# 11.60-6.0.2-12-12
+5941a9703fce4a500fb39efa:
+  topological: 5941a9703fce4a500fb39efa
+  braid: 5941a9703fce4a500fb39efa
+
+5941a9703fce4a500fb39ef9:
+  topological: 5941a9703fce4a500fb39ef9
+  braid: 5941a9703fce4a500fb39ef9
+# 11.80-30.0.4-4-4
+5941a97d3fce4a500fb39f11:
+  topological: 5941a97b3fce4a500fb39f0d
+  braid: 5941a97d3fce4a500fb39f11
+
+5941a97d3fce4a500fb39f12:
+  topological: 5941a97b3fce4a500fb39f0e
+  braid: 5941a97d3fce4a500fb39f12
+
+5941a97c3fce4a500fb39f10:
+  topological: 5941a97b3fce4a500fb39f0e
+  braid: 5941a97c3fce4a500fb39f10
+
+5941a97b3fce4a500fb39f0e:
+  topological: 5941a97b3fce4a500fb39f0e
+  braid: 5941a97b3fce4a500fb39f0e
+
+5941a97b3fce4a500fb39f0d:
+  topological: 5941a97b3fce4a500fb39f0d
+  braid: 5941a97b3fce4a500fb39f0d
+
+5941a97e3fce4a500fb39f14:
+  topological: 5941a97b3fce4a500fb39f0e
+  braid: 5941a97e3fce4a500fb39f14
+
+5941a97c3fce4a500fb39f0f:
+  topological: 5941a97b3fce4a500fb39f0d
+  braid: 5941a97c3fce4a500fb39f0f
+
+5941a97e3fce4a500fb39f13:
+  topological: 5941a97b3fce4a500fb39f0d
+  braid: 5941a97e3fce4a500fb39f13

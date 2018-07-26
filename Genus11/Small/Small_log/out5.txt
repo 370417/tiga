@@ -1,0 +1,18 @@
+Starting family 11.16-5.0.4-4-8-8
+0.194040060043
+Starting family 11.8-4.0.4-4-4-4-4-4
+246.359274149
+Starting family 11.24-5.0.2-4-4-6
+0.0312678813934
+Starting family 11.24-13.0.2-3-6-6
+0.213606834412
+Starting family 11.32-9.0.2-2-4-8
+361.300312996
+Starting family 11.66-2.0.2-6-33
+0.129135131836
+Starting family 11.96-32.0.2-4-24
+0.270853042603
+Starting family 11.20-1.0.4-4-4-4
+2.97690701485
+611.47539711
+Done families5.json

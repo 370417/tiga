@@ -1,0 +1,4 @@
+Starting family 13.6-1.0.2-2-2-2-2-2-2-2-3-3-3
+286.111523867
+286.111523867
+Done./Genus13/largefamilies8.json

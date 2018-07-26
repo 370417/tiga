@@ -1,0 +1,29 @@
+Starting family 13.6-2.0.2-2-3-3-3-3-3-6-6
+0.406466007233
+Starting family 13.8-1.0.2-2-4-4-4-8-8
+0.0664849281311
+Starting family 13.10-2.0.2-2-5-5-10-10
+0.0596270561218
+Starting family 13.10-2.0.2-2-2-2-5-5-5
+0.0250630378723
+Starting family 13.12-2.0.4-4-6-6-6
+0.0397038459778
+Starting family 13.12-5.0.3-6-6-6-6
+0.0634300708771
+Starting family 13.12-1.0.2-3-3-3-4-4
+0.886749982834
+Starting family 13.12-4.0.2-2-3-3-6-6
+49.6183819771
+Starting family 13.12-2.0.2-2-2-3-12-12
+0.0413558483124
+Starting family 13.12-4.0.2-2-2-2-3-3-3
+Traceback (most recent call last):
+  File "no-db.py", line 351, in <module>
+    start = time.time()
+  File "no-db.py", line 344, in run_magma
+    save_output(label, yaml.load(magma_output))
+  File "no-db.py", line 321, in save_output
+    flush(output_file)
+  File "no-db.py", line 27, in flush
+    os.fsync(file.fileno())
+OSError: [Errno 28] No space left on device

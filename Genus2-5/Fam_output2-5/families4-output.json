@@ -1,0 +1,444 @@
+# 2.12-4.0.2-2-2-3
+579ba55175d28e4971d3ed71:
+  topological: 579ba55175d28e4971d3ed71
+  braid: 579ba55175d28e4971d3ed71
+# 2.12-5.0.2-6-6
+579ba55b75d28e4971d3ed86:
+  topological: 579ba55a75d28e4971d3ed84
+  braid: 579ba55b75d28e4971d3ed86
+
+579ba55b75d28e4971d3ed87:
+  topological: 579ba55a75d28e4971d3ed84
+  braid: 579ba55b75d28e4971d3ed87
+
+579ba55c75d28e4971d3ed89:
+  topological: 579ba55a75d28e4971d3ed84
+  braid: 579ba55c75d28e4971d3ed89
+
+579ba55c75d28e4971d3ed88:
+  topological: 579ba55a75d28e4971d3ed84
+  braid: 579ba55c75d28e4971d3ed88
+
+579ba55a75d28e4971d3ed85:
+  topological: 579ba55a75d28e4971d3ed84
+  braid: 579ba55a75d28e4971d3ed85
+
+579ba55a75d28e4971d3ed84:
+  topological: 579ba55a75d28e4971d3ed84
+  braid: 579ba55a75d28e4971d3ed84
+# 3.32-9.0.2-4-8
+579ba5ac75d28e4971d3ede8:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ac75d28e4971d3ede8
+
+579ba5ac75d28e4971d3ede9:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ac75d28e4971d3ede9
+
+579ba5ab75d28e4971d3ede7:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ab75d28e4971d3ede7
+
+579ba5ab75d28e4971d3ede6:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ab75d28e4971d3ede6
+
+579ba5ae75d28e4971d3edec:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ae75d28e4971d3edec
+
+579ba5ae75d28e4971d3eded:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ae75d28e4971d3eded
+
+579ba5ad75d28e4971d3edea:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ad75d28e4971d3edea
+
+579ba5ad75d28e4971d3edeb:
+  topological: 579ba5ab75d28e4971d3ede6
+  braid: 579ba5ad75d28e4971d3edeb
+# 3.16-6.0.2-8-8
+579ba5d275d28e4971d3ee38:
+  topological: 579ba5d275d28e4971d3ee38
+  braid: 579ba5d275d28e4971d3ee38
+
+579ba5d375d28e4971d3ee39:
+  topological: 579ba5d275d28e4971d3ee38
+  braid: 579ba5d375d28e4971d3ee39
+# 3.32-11.0.2-4-8
+579ba5db75d28e4971d3ee4a:
+  topological: 579ba5db75d28e4971d3ee49
+  braid: 579ba5db75d28e4971d3ee4a
+
+579ba5db75d28e4971d3ee49:
+  topological: 579ba5db75d28e4971d3ee49
+  braid: 579ba5db75d28e4971d3ee49
+
+579ba5dc75d28e4971d3ee4c:
+  topological: 579ba5db75d28e4971d3ee49
+  braid: 579ba5dc75d28e4971d3ee4c
+
+579ba5dc75d28e4971d3ee4b:
+  topological: 579ba5db75d28e4971d3ee49
+  braid: 579ba5dc75d28e4971d3ee4b
+# 4.6-2.0.2-2-3-3-3
+579ba66575d28e4971d3ee5f:
+  topological: 579ba66475d28e4971d3ee5e
+  braid: 579ba66575d28e4971d3ee5f
+
+579ba66475d28e4971d3ee5e:
+  topological: 579ba66475d28e4971d3ee5e
+  braid: 579ba66475d28e4971d3ee5e
+# 4.6-2.0.2-6-6-6
+579ba68275d28e4971d3ee9b:
+  topological: 579ba68275d28e4971d3ee9b
+  braid: 579ba68275d28e4971d3ee9b
+
+579ba68275d28e4971d3ee9c:
+  topological: 579ba68275d28e4971d3ee9b
+  braid: 579ba68275d28e4971d3ee9c
+# 4.12-3.0.2-3-3-3
+579ba68775d28e4971d3eea9:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68675d28e4971d3eea8
+
+579ba68675d28e4971d3eea8:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68675d28e4971d3eea8
+
+579ba68675d28e4971d3eea7:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68575d28e4971d3eea4
+
+579ba68875d28e4971d3eeab:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68675d28e4971d3eea8
+
+579ba68775d28e4971d3eeaa:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68675d28e4971d3eea8
+
+579ba68575d28e4971d3eea5:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68575d28e4971d3eea4
+
+579ba68575d28e4971d3eea4:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68575d28e4971d3eea4
+
+579ba68575d28e4971d3eea6:
+  topological: 579ba68575d28e4971d3eea4
+  braid: 579ba68575d28e4971d3eea4
+# 4.5-1.0.5-5-5-5
+579ba6df75d28e4971d3ef5f:
+  topological: 579ba6df75d28e4971d3ef5f
+  braid: 579ba6df75d28e4971d3ef5f
+
+579ba6e175d28e4971d3ef64:
+  topological: 579ba6e075d28e4971d3ef63
+  braid: 579ba6e175d28e4971d3ef64
+
+579ba6a175d28e4971d3eee0:
+  topological: 579ba6a175d28e4971d3eee0
+  braid: 579ba6a175d28e4971d3eee0
+
+579ba6e075d28e4971d3ef61:
+  topological: 579ba6df75d28e4971d3ef5f
+  braid: 579ba6e075d28e4971d3ef61
+
+579ba6e075d28e4971d3ef63:
+  topological: 579ba6e075d28e4971d3ef63
+  braid: 579ba6e075d28e4971d3ef63
+
+579ba6e075d28e4971d3ef62:
+  topological: 579ba6df75d28e4971d3ef5f
+  braid: 579ba6e075d28e4971d3ef62
+
+579ba6df75d28e4971d3ef60:
+  topological: 579ba6df75d28e4971d3ef5f
+  braid: 579ba6df75d28e4971d3ef60
+# 4.36-9.0.3-4-4
+579ba6da75d28e4971d3ef56:
+  topological: 579ba6da75d28e4971d3ef55
+  braid: 579ba6da75d28e4971d3ef56
+
+579ba6da75d28e4971d3ef55:
+  topological: 579ba6da75d28e4971d3ef55
+  braid: 579ba6da75d28e4971d3ef55
+# 4.18-2.0.2-9-18
+579ba69275d28e4971d3eebf:
+  topological: 579ba69175d28e4971d3eebe
+  braid: 579ba69275d28e4971d3eebf
+
+579ba69475d28e4971d3eec3:
+  topological: 579ba69175d28e4971d3eebe
+  braid: 579ba69475d28e4971d3eec3
+
+579ba69175d28e4971d3eebe:
+  topological: 579ba69175d28e4971d3eebe
+  braid: 579ba69175d28e4971d3eebe
+
+579ba69375d28e4971d3eec2:
+  topological: 579ba69175d28e4971d3eebe
+  braid: 579ba69375d28e4971d3eec2
+
+579ba69375d28e4971d3eec1:
+  topological: 579ba69175d28e4971d3eebe
+  braid: 579ba69375d28e4971d3eec1
+
+579ba69275d28e4971d3eec0:
+  topological: 579ba69175d28e4971d3eebe
+  braid: 579ba69275d28e4971d3eec0
+# 5.6-2.0.2-2-2-2-3-3
+579bc7a075d28e4971d3ef98:
+  topological: 579bc7a075d28e4971d3ef98
+  braid: 579bc7a075d28e4971d3ef98
+# 5.8-3.0.2-2-2-4-4
+579bc7ac75d28e4971d3efb1:
+  topological: 579bc7ac75d28e4971d3efaf
+  braid: 579bc7ac75d28e4971d3efb1
+
+579bc7ac75d28e4971d3efb0:
+  topological: 579bc7ac75d28e4971d3efaf
+  braid: 579bc7ac75d28e4971d3efaf
+
+579bc7ad75d28e4971d3efb2:
+  topological: 579bc7ac75d28e4971d3efaf
+  braid: 579bc7ac75d28e4971d3efb1
+
+579bc7ac75d28e4971d3efaf:
+  topological: 579bc7ac75d28e4971d3efaf
+  braid: 579bc7ac75d28e4971d3efaf
+# 5.10-1.0.2-2-2-2-5
+579bc7df75d28e4971d3f017:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7df75d28e4971d3f016:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e075d28e4971d3f01a:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e375d28e4971d3f01e:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e375d28e4971d3f01d:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7f375d28e4971d3f03f:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e975d28e4971d3f02b:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7ef75d28e4971d3f037:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7ef75d28e4971d3f038:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e775d28e4971d3f026:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7dd75d28e4971d3f014:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7dd75d28e4971d3f013:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e775d28e4971d3f027:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7ea75d28e4971d3f02d:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7ec75d28e4971d3f030:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e675d28e4971d3f025:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7ea75d28e4971d3f02c:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7eb75d28e4971d3f02f:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7eb75d28e4971d3f02e:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e975d28e4971d3f02a:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7f075d28e4971d3f03a:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f175d28e4971d3f03b:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f175d28e4971d3f03c:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e675d28e4971d3f023:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7ec75d28e4971d3f031:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f475d28e4971d3f040:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f475d28e4971d3f041:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f575d28e4971d3f043:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f575d28e4971d3f042:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e475d28e4971d3f01f:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e675d28e4971d3f024:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7ee75d28e4971d3f036:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7ee75d28e4971d3f035:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7ee75d28e4971d3f034:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7de75d28e4971d3f015:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e075d28e4971d3f018:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e075d28e4971d3f019:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e875d28e4971d3f029:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7f275d28e4971d3f03e:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7f275d28e4971d3f03d:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e875d28e4971d3f028:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7ed75d28e4971d3f032:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7ed75d28e4971d3f033:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e175d28e4971d3f01c:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e175d28e4971d3f01b:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7f075d28e4971d3f039:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7e975d28e4971d3f02b
+
+579bc7e475d28e4971d3f020:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e575d28e4971d3f021:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7e575d28e4971d3f022:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+
+579bc7dc75d28e4971d3f012:
+  topological: 579bc7dc75d28e4971d3f012
+  braid: 579bc7dc75d28e4971d3f012
+# 5.24-9.0.2-12-12
+579bc8f075d28e4971d3f236:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8f075d28e4971d3f236
+
+579bc8f275d28e4971d3f239:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8f275d28e4971d3f239
+
+579bc8f175d28e4971d3f238:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8f175d28e4971d3f238
+
+579bc8f375d28e4971d3f23a:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8f375d28e4971d3f23a
+
+579bc8f375d28e4971d3f23b:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8f375d28e4971d3f23b
+
+579bc8ef75d28e4971d3f235:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8ef75d28e4971d3f235
+
+579bc8ef75d28e4971d3f234:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8ef75d28e4971d3f234
+
+579bc8f075d28e4971d3f237:
+  topological: 579bc8ef75d28e4971d3f234
+  braid: 579bc8f075d28e4971d3f237

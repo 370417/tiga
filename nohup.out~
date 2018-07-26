@@ -1,0 +1,26 @@
+Starting family 9.2-1.0.2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2
+0.000382900238037
+Starting family 9.6-2.0.2-2-3-3-3-6-6
+Traceback (most recent call last):
+  File "no-db.py", line 4, in <module>
+    from sage.interfaces.magma import Magma
+  File "/usr/lib/python2.7/dist-packages/sage/interfaces/magma.py", line 220, in <module>
+    from sage.structure.parent import Parent
+  File "sage/structure/parent.pyx", line 115, in init sage.structure.parent (/build/sagemath-zWcbUi/sagemath-7.4/sage/src/build/cythonized/sage/structure/parent.c:31977)
+  File "/usr/lib/python2.7/dist-packages/sage/categories/sets_cat.py", line 26, in <module>
+    from sage.categories.sets_with_partial_maps import SetsWithPartialMaps
+  File "/usr/lib/python2.7/dist-packages/sage/categories/sets_with_partial_maps.py", line 15, in <module>
+    from .objects import Objects
+  File "/usr/lib/python2.7/dist-packages/sage/categories/objects.py", line 17, in <module>
+    from sage.categories.homsets import HomsetsCategory
+  File "/usr/lib/python2.7/dist-packages/sage/categories/homsets.py", line 17, in <module>
+    from sage.categories.category_with_axiom import CategoryWithAxiom
+  File "/usr/lib/python2.7/dist-packages/sage/categories/category_with_axiom.py", line 1663, in <module>
+    from sage.misc.misc import call_method
+  File "/usr/lib/python2.7/dist-packages/sage/misc/misc.py", line 78, in <module>
+    import sage.misc.prandom as random
+  File "/usr/lib/python2.7/dist-packages/sage/misc/prandom.py", line 58, in <module>
+    from sage.misc.randstate import current_randstate
+  File "src/cysignals/signals.pyx", line 252, in cysignals.signals.python_check_interrupt (build/pari/src/cysignals/signals.c:2614)
+  File "src/cysignals/signals.pyx", line 97, in cysignals.signals.sig_raise_exception (build/pari/src/cysignals/signals.c:1145)
+KeyboardInterrupt
