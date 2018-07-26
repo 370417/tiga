@@ -78,6 +78,5 @@ for i in range(1, len(sys.argv), 2):
             entry['signH'] = str(signH)
             entry['full_label'] = generate_full_label(entry, full_gp_label, signH)
         entry['jacobian_decomp'] = vector['decompose_jac']
-        #print entry
-        #cap.insert(entry)
+        cap.insert(entry)
 
